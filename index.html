@@ -3632,7 +3632,7 @@ function renderizartabla(turnosconrango){
                 ${e.MEDICO}<br><small>${e.ESPECIALIDAD}</small> <small>${e.CONSULTORIO}</small>
                 <div class="tooltip">
                     <div><strong>Médico:</strong> ${e.MEDICO}</div>
-                    
+                    <div><strong>Fecha:</strong> ${e.FECHA}</div>
                     <div><strong>Especialidad:</strong> ${e.ESPECIALIDAD}</div>
                     <div><strong>Tiempo disponible:</strong> ${e.RANGOS_30_MINUTOS.filter(o=>o.RANGO===rangodeterminado)[0].INTERSECCION} </div>
                     <div><strong>Tiempo bloqueado:</strong> ${e.RANGOS_30_MINUTOS.filter(o=>o.RANGO===rangodeterminado)[0].INTERSECCION_BLOQUEO} </div>
@@ -3659,3 +3659,4 @@ renderizartabla(todoslosdatos);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
+
